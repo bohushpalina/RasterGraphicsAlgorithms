@@ -28,3 +28,12 @@
 ## Запуск (локально)
 ```bash
 python main.py
+
+# Запуск через Docker
+
+```bash
+git clone https://github.com/<твой_ник>/DDA-Bresenham-Visualizer.git
+cd DDA-Bresenham-Visualizer
+sudo docker build -t raster-app .
+xhost +local:docker
+sudo docker run -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix raster-app
