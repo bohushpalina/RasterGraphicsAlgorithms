@@ -32,7 +32,7 @@ python main.py
 # Запуск через Docker
 
 ```bash
-git clone https://github.com/<твой_ник>/DDA-Bresenham-Visualizer.git
+git clone https://github.com/bohushpalina/RasterGraphicsAlgorithms
 cd DDA-Bresenham-Visualizer
 sudo docker build -t raster-app .
 xhost +local:docker
